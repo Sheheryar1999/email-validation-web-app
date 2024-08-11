@@ -1,0 +1,26 @@
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 110%; /* Increase text size by 10% */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+  }
+  
+  .navbar-link:hover {
+    color: teal;
+    transform: scale(1.1); /* Expand the size on hover */
+  }
+  
+  /* Style for the Email Validator button */
+  .email-validator {
+    color: white;
+    text-decoration: none;
+    font-size: 110%; /* Increase text size by 10% */
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .email-validator:hover {
+    color: teal;
+    transform: scale(1.1); /* Expand the size on hover */
+  }
+  
