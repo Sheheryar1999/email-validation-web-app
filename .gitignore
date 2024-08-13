@@ -1,2 +1,7 @@
 python/
 tempApp/
+
+.env
+
+node_modules/
+holy_shit.txt
