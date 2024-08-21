@@ -1,0 +1,109 @@
+/* Import the Poppins font with different weights */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Navbar structure */
+.navbar {
+  font-family: 'Poppins', sans-serif; /* Use Poppins font */
+  position: fixed; /* Fixes the navbar at the top of the viewport */
+  border: 2px solid #ffffff;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #0c0520 !important; /* Light blue to white gradient */
+  transition: all 0.3s ease-in-out; /* Smooth transition for changes */
+  z-index: 1000; /* Ensure navbar is on top of other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Optional: add shadow for better visibility */
+}
+
+/* Shrink effect on scroll */
+.navbar-shrink {
+  transform: scaleY(0.9); /* Shrink the navbar */
+  transform-origin: top; /* Ensure it shrinks from the top */
+  padding: 0.5rem 1rem; /* Adjust padding */
+}
+
+/* Ensure header has enough top margin to avoid overlap */
+body {
+  margin-top: 60px; /* Adjust according to your navbar height */
+}
+
+/* Navbar container for layout */
+.navbar-container {
+  padding: 1rem 1rem; /* Adjust padding if needed */
+  max-width: 100%;
+  margin: 0 auto; /* Center align */
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Ensure space between the brand and links */
+}
+
+/* Navbar brand styles */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 700; /* Increased boldness */
+  transition: transform 0.3s ease, color 0.3s ease;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.navbar-brand:hover {
+  color: teal;
+  transform: scale(1.1);
+}
+
+/* Navbar links container */
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Common styling for navbar links */
+.navbar-link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: 600; /* Increased boldness */
+  transition: transform 0.3s ease, color 0.3s ease;
+  white-space: nowrap;
+}
+
+.navbar-link:hover {
+  color: teal;
+  transform: scale(1.1);
+}
+
+/* Styling for the 'Sign Up' button */
+.signup-button {
+  border: 2px solid rgb(255, 255, 255);
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  font-size: 1.1rem;
+  font-weight: 700; /* Increased boldness */
+  letter-spacing: 1px;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  white-space: nowrap;
+}
+
+.signup-button:hover {
+  color: teal;
+  transform: scale(1.1);
+  background-color: rgb(255, 255, 255);
+}
+
+/* Icon styling */
+.navbar-icon {
+  margin-right: 0.5rem; /* Space between icon and text */
+  font-size: 1.25rem; /* Set icon size */
+}

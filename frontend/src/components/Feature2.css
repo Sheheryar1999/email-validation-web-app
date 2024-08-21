@@ -1,0 +1,146 @@
+/* Feature section styles */
+.feature-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 920px;
+  margin: 50px auto;
+  background: linear-gradient(to bottom, #f3f1e2 10%, #ffffff 50%);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  border: 1px solid #ddd; /* Light border */
+}
+
+/* Section heading styles */
+.section-heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #000000; /* Dark color for contrast */
+}
+
+/* Features container styles */
+.features-container {
+  display: flex;
+  width: 100%;
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #f3f1e2 10%, #ffffff 50%);
+  margin: 0;
+}
+
+/* Headings container styles */
+.features-headings {
+  width: 28%;
+  background: linear-gradient(to bottom, #f3f1e2 10%, #ffffff 50%);
+  border-right: 1px solid #ddd; /* Light border */
+  padding: 10px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* Individual feature heading styles */
+.feature-heading {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd; /* Light border */
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000; /* Dark color for headings */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Add gap between icon and text */
+.feature-heading .feature-icon {
+  margin-right: 20px; /* Adjust this value as needed */
+  font-size: 28px;
+}
+
+.feature-heading:hover {
+  background-color: #e1e1e1; /* Light gray on hover */
+}
+
+.feature-heading.active {
+  color: #000000; /* Dark color for active heading */
+  background: linear-gradient(to bottom, #f3f1e2 10%, #ffffff 50%);
+}
+
+.features-headings .feature-heading:not(.active) {
+  color: #3f464d; /* Medium gray for non-active headings */
+}
+
+/* Details container styles */
+.features-details {
+  background: linear-gradient(to bottom, #f3f1e2 10%, #ffffff 50%);
+  width: 72%;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+/* Individual feature detail styles */
+.feature-detail {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+}
+
+.feature-detail.active {
+  max-height: 1000px; /* Adjust based on content */
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.feature-detail h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #1a202c; /* Dark color for headings */
+}
+
+.feature-detail p {
+  color: #1a202c; /* Dark color for text */
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.feature-detail ul {
+  list-style-type: disc;
+  padding-left: 12px;
+  margin-top: 8px;
+  color: #1a202c; /* Dark color for list items */
+}
+
+.feature-detail li {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.feature-detail .highlight {
+  color: #1a202c; /* Dark color for highlights */
+  font-weight: bold;
+}
+
+/* Try button styles */
+.try-button {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #007bff; /* Button color */
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.try-button:hover {
+  background-color: #0056b3; /* Button hover color */
+}

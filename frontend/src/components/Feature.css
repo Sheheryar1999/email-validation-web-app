@@ -1,0 +1,91 @@
+/* Feature.css */
+
+/* Container for the entire feature section */
+.feature-container {
+  max-width: 1200px;
+  padding: 40px; /* Adds gap before and after the section */
+  margin: 50px auto; /* Centers the section and adds gap above and below */
+  border: 2px solid #000000; /* Adds a border around the section */
+  border-radius: 10px; /* Optional: Rounds the corners of the border */
+  background-color: #f9f9f9; /* Optional: Background color for the section */
+}
+
+/* Container to center the heading */
+.feature-heading-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Space between heading and content */
+}
+
+/* Ensure specific styles for headings in feature sections */
+.feature-container .feature-heading {
+  text-align: center;
+  font-size: 3rem;
+  color: #000000; /* Change text color to black */
+  background-color: transparent; /* Remove background color */
+  padding: 0; /* Remove padding */
+  border-radius: 0; /* Remove border radius to eliminate oval effect */
+  display: inline-block; /* Ensure the box fits tightly around the text */
+  z-index: 10; /* Ensure it appears above other elements */
+}
+
+/* Container for the feature items */
+.feature-content {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Individual feature items */
+.feature-item {
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #1f2937;
+  text-align: center;
+  cursor: pointer; /* Add a pointer cursor to indicate interactivity */
+}
+
+/* Styling for the icons */
+.feature-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background-color: #e0e7ff;
+}
+
+/* SVG styling inside the icon */
+.feature-svg {
+  width: 32px;
+  height: 32px;
+  color: teal; /* Adjust color as needed */
+}
+
+/* Title of each feature */
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #ffffff; /* Adjust color as needed */
+}
+
+/* Hide feature descriptions initially */
+.feature-description {
+  max-height: 0; /* Hide the element by setting max-height to 0 */
+  opacity: 0; /* Hide the element by setting opacity to 0 */
+  overflow: hidden; /* Ensure content does not overflow */
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out; /* Animation timing */
+  font-size: 1.5rem;
+  color: #ffffff; /* Adjust color as needed */
+  margin-top: 10px; /* Add spacing above the description */
+}
+
+/* Display feature description when active with animation */
+.feature-item.active .feature-description {
+  max-height: 500px; /* Adjust this value based on the expected height of your content */
+  opacity: 1;
+}

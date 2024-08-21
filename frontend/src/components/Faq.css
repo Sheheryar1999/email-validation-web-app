@@ -1,0 +1,102 @@
+/* Base styles for the FAQ container */
+.faq-container {
+  padding: 2rem; /* Adjust padding for spacing */
+  background: linear-gradient(to bottom, #f3f0d7 10%, #ffffff 50%); /* Light blue to white gradient */
+  border: 2px solid #ddd; /* Light gray border */
+  border-radius: 0.5rem; /* Rounded corners */
+  max-width: 800px; /* Increased width for better balance */
+  margin: 0 auto; /* Center align */
+  margin-bottom: 2rem; /* Bottom margin for spacing */
+}
+
+/* Header styles */
+.faq-header {
+  text-align: center; /* Center align text */
+  margin-bottom: 2rem; /* Margin below header */
+}
+
+.faq-title {
+  font-size: 2rem; /* Font size for title */
+  font-weight: bold; /* Bold font */
+  color: #000000; /* Dark gray text */
+  position: relative; /* Relative positioning for the svg */
+}
+
+.faq-title svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6rem; /* Width of the SVG */
+  height: 4rem; /* Height of the SVG */
+  fill: #007bff; /* Blue color for the SVG */
+}
+
+.faq-description {
+  font-size: 1rem; /* Font size for description */
+  color: #000000; /* Gray text color */
+}
+
+/* FAQ item styles */
+.faq-item {
+  background: linear-gradient(to bottom, #f3f0d7 10%, #ffffff 50%) !important; /* Light blue to white gradient */
+  border: 1px solid #ddd; /* Light border for items */
+  border-radius: 0.5rem; /* Rounded corners for items */
+  margin-bottom: 0.5rem; /* Margin between items */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.faq-item-button {
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Space between title and icon */
+  width: 100%; /* Full width */
+  padding: 0.75rem; /* Padding for button */
+  background-color: #ffffff; /* Background color for button */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 1.1rem; /* Font size for title */
+  font-weight: 500; /* Medium weight */
+  color: #000000; /* Dark gray text */
+  text-align: left; /* Align text to the left */
+}
+
+.faq-item-button svg {
+  transition: transform 0.2s; /* Smooth rotation transition */
+  transform: rotate(0deg); /* Initial rotation */
+}
+
+.faq-item-button.open svg {
+  transform: rotate(180deg); /* Rotate icon when open */
+}
+
+/* Transition for FAQ item content */
+.faq-item-content {
+  max-height: 0; /* Start with no height */
+  overflow: hidden; /* Hide overflow content */
+  transition: max-height 0.4s ease-out; /* Smooth transition */
+  padding: 0; /* No padding initially */
+  font-size: 1rem; /* Font size for content */
+  color: #000000; /* Dark gray text color */
+  background: linear-gradient(to bottom, #f3f0d7 10%, #ffffff 50%); /* Light blue to white gradient */
+  border-top: 1px solid #ddd; /* Border to separate from the button */
+}
+
+/* Open state of FAQ item content */
+.faq-item-content.open {
+  padding: 0.75rem; /* Padding when open */
+  max-height: 200px; /* Adjust max height as needed */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .faq-title {
+    font-size: 1.5rem; /* Smaller font size on smaller screens */
+  }
+  
+  .faq-item-button {
+    font-size: 1rem; /* Smaller font size on smaller screens */
+  }
+
+  .faq-item-content {
+    font-size: 0.9rem; /* Smaller font size on smaller screens */
+  }
+}

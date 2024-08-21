@@ -1,0 +1,122 @@
+/* Add top margin to create space for the fixed navbar */
+.header-overflow-hidden {
+  overflow: hidden;
+  margin-top: 60px; /* Adjust this value based on the height of your navbar */
+}
+
+.header-container {
+  padding: 4rem 1rem;
+  margin: 0 auto;
+  max-width: 1300px;
+  background-image: url('/public/image/31.jpg'); /* Correct path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1280px) {
+  .header-content {
+    flex-direction: row;
+  }
+}
+
+.header-text-container {
+  width: 100%;
+  max-width: 30rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+@media (min-width: 1280px) {
+  .header-text-container {
+    margin-bottom: 0;
+    width: 58.333333%;
+    text-align: left;
+  }
+}
+
+.header-title {
+  max-width: 28rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Sans', sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: rgb(0, 0, 0);
+}
+
+@media (min-width: 640px) {
+  .header-title {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+.header-highlight {
+  color: #000000; /* text-teal-accent-400 */
+}
+
+.header-description {
+  max-width: 28rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem !important;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .header-description {
+    font-size: 1.125rem;
+  }
+}
+
+.header-link {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  color: #ffffff;
+  transition: color 0.2s;
+}
+
+.header-link:hover {
+  color: #38b2ac;
+}
+
+.header-icon {
+  display: inline-block;
+  width: 0.75rem;
+  margin-left: 0.5rem;
+}
+
+/* Optional image container styling */
+.header-image-container {
+  max-width: 600px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.header-image-container img {
+  object-cover: cover;
+  object-position: top;
+  width: 100%;
+  height: 51.2px;
+  max-width: 28rem;
+  margin-bottom: -16px;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 1280px) {
+  .header-image-container img {
+    margin-left: 64px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: -24px;
+  }
+}

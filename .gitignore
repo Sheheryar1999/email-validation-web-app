@@ -5,3 +5,8 @@ tempApp/
 
 node_modules/
 holy_shit.txt
+
+client/
+server/
+
+Extras/

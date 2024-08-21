@@ -1,0 +1,54 @@
+/* Landing.css */
+.bg-image {
+    background-color: rgb(255, 255, 255) ;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .min-height-75vh {
+    min-height: 75vh;
+  }
+  
+  .height-70px {
+    height: 70px;
+  }
+  
+  /* Additional styles for the Landing section */
+  .text-gray-800 {
+    color: #4a5568;
+  }
+  
+  .text-gray-600 {
+    color: #718096;
+  }
+  
+  .bg-gray-300 {
+    background-color: rgb(231, 229, 229);
+  }
+  
+  .bg-red-400 {
+    background-color: #f56565;
+  }
+  
+  .bg-blue-400 {
+    background-color: #4299e1;
+  }
+  
+  .bg-green-400 {
+    background-color: #48bb78;
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Ensure responsive design */
+  @media (max-width: 768px) {
+    .lg\:pt-12 {
+      padding-top: 3rem;
+    }
+    .text-5xl {
+      font-size: 3rem;
+    }
+  }
+  

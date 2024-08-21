@@ -1,0 +1,114 @@
+.pricing-timeline-section {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing-display {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.pricing-box {
+  background: linear-gradient(135deg, #d8bfdf, #f8cad2, #fcd4c2, #ffe7bf);
+  border: 2px solid #ddd;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 40%;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.pricing-slider {
+  width: 100%;
+  accent-color: #6b21a8; /* Custom purple accent color */
+}
+
+.slider-labels {
+  display: none; /* Hide the slider labels */
+}
+
+/* Dot styles */
+.slider-dot {
+  position: absolute;
+  height: 14px; /* Dot height (10% taller than the line) */
+  width: 14px; /* Dot width */
+  background-color: #6b21a8; /* Dot color */
+  border-radius: 50%;
+  transform: translate(-50%, 0%); /* Center the dot horizontally and align with the track */
+  z-index: 1;
+  top: 0px; /* Adjust this value to move dots down */
+  cursor: pointer; /* Make dots clickable */
+}
+
+/* Positioning dots based on slider stops */
+.slider-dot:nth-child(1) { left: 1%; }
+.slider-dot:nth-child(2) { left: 13.5%; }
+.slider-dot:nth-child(3) { left: 25.5%; }
+.slider-dot:nth-child(4) { left: 38%; }
+.slider-dot:nth-child(5) { left: 50%; }
+.slider-dot:nth-child(6) { left: 62%; }
+.slider-dot:nth-child(7) { left: 74.5%; }
+.slider-dot:nth-child(8) { left: 86.5%; }
+.slider-dot:nth-child(9) { left: 98.5%; }
+
+.main-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4a4a4a;
+  margin-bottom: 0.5rem;
+}
+
+.secondary-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4a4a4a;
+  margin-bottom: 2rem;
+}
+
+button.get {
+  background-color: #6b21a8;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button.get:hover {
+  background-color: #5a1d8a;
+}
+
+button.free {
+  background-color: #6b21a8;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button.free:hover {
+  background-color: #5a1d8a;
+}
+
+button {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin-top: 1rem;
+}

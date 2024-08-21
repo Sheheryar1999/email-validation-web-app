@@ -1,0 +1,58 @@
+/* Apply background pattern to the entire page */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #d8bfdf, #f8cad2, #fcd4c2, #ffe7bf);
+    background-size: 200% 200%;
+    animation: gradientAnimation 20s ease infinite;
+}
+
+/* Ensure sections do not inherit background color */
+.homepage-section {
+    background: linear-gradient(to bottom, #f3f0d7 10%, #ffffff 50%); /* Light blue to white gradient */
+    padding: 2rem;
+    border-radius: 0.5rem;
+    position: relative;
+    z-index: 1; /* Ensure sections stay on top of the background */
+}
+
+/* Ensure the navbar and footer stay on top of the background */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1a202c; /* Dark background for the navbar */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1a202c; /* Dark background for the footer */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+/* Animation for background gradient */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+/* Optional styling for sections */
+.homepage-section:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for alternating sections */
+}
+
+.homepage-section:nth-of-type(even) {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly darker for contrast */
+}
